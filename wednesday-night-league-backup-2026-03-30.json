@@ -1,0 +1,1809 @@
+{
+  "exportedAt": "2026-03-30T12:35:36.310Z",
+  "teams": [
+    {
+      "id": 1,
+      "number": 1,
+      "name": "Team 1"
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "name": "Team 2"
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "name": "Team 3"
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "name": "Team 4"
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "name": "Team 5"
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "name": "Team 6"
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "name": "Team 7"
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "name": "Team 8"
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "name": "Team 9"
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "name": "Team 10"
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "name": "Team 11"
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "name": "Team 12"
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "name": "Team 13"
+    },
+    {
+      "id": 14,
+      "number": 14,
+      "name": "Team 14"
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "name": "Team 15"
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "name": "Team 16"
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "name": "Team 17"
+    },
+    {
+      "id": 18,
+      "number": 18,
+      "name": "Team 18"
+    }
+  ],
+  "players": [
+    {
+      "id": 1,
+      "name": "Tom Carter",
+      "teamNumber": 1,
+      "lineupSlot": 1
+    },
+    {
+      "id": 2,
+      "name": "Mike Wilson",
+      "teamNumber": 1,
+      "lineupSlot": 2
+    },
+    {
+      "id": 3,
+      "name": "John Smith",
+      "teamNumber": 1,
+      "lineupSlot": 3
+    },
+    {
+      "id": 4,
+      "name": "Dave Lee",
+      "teamNumber": 1,
+      "lineupSlot": 4
+    },
+    {
+      "id": 5,
+      "name": "Sam Miller",
+      "teamNumber": 2,
+      "lineupSlot": 1
+    },
+    {
+      "id": 6,
+      "name": "Chris Stone",
+      "teamNumber": 2,
+      "lineupSlot": 2
+    },
+    {
+      "id": 7,
+      "name": "Brian Hall",
+      "teamNumber": 2,
+      "lineupSlot": 3
+    },
+    {
+      "id": 8,
+      "name": "Luke Adams",
+      "teamNumber": 2,
+      "lineupSlot": 4
+    }
+  ],
+  "schedule": [
+    {
+      "week": 1,
+      "date": "Apr 4",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 18
+    },
+    {
+      "week": 1,
+      "date": "Apr 4",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 2,
+      "teamBNumber": 17
+    },
+    {
+      "week": 1,
+      "date": "Apr 4",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 3,
+      "teamBNumber": 16
+    },
+    {
+      "week": 1,
+      "date": "Apr 4",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 4,
+      "teamBNumber": 15
+    },
+    {
+      "week": 1,
+      "date": "Apr 4",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 5,
+      "teamBNumber": 14
+    },
+    {
+      "week": 1,
+      "date": "Apr 4",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 6,
+      "teamBNumber": 13
+    },
+    {
+      "week": 1,
+      "date": "Apr 4",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 7,
+      "teamBNumber": 12
+    },
+    {
+      "week": 1,
+      "date": "Apr 4",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 8,
+      "teamBNumber": 11
+    },
+    {
+      "week": 1,
+      "date": "Apr 4",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 9,
+      "teamBNumber": 10
+    },
+    {
+      "week": 2,
+      "date": "Apr 11",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 17
+    },
+    {
+      "week": 2,
+      "date": "Apr 11",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 2,
+      "teamBNumber": 15
+    },
+    {
+      "week": 2,
+      "date": "Apr 11",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 3,
+      "teamBNumber": 14
+    },
+    {
+      "week": 2,
+      "date": "Apr 11",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 4,
+      "teamBNumber": 13
+    },
+    {
+      "week": 2,
+      "date": "Apr 11",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 5,
+      "teamBNumber": 12
+    },
+    {
+      "week": 2,
+      "date": "Apr 11",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 6,
+      "teamBNumber": 11
+    },
+    {
+      "week": 2,
+      "date": "Apr 11",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 7,
+      "teamBNumber": 10
+    },
+    {
+      "week": 2,
+      "date": "Apr 11",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 8,
+      "teamBNumber": 9
+    },
+    {
+      "week": 2,
+      "date": "Apr 11",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 18,
+      "teamBNumber": 16
+    },
+    {
+      "week": 3,
+      "date": "Apr 18",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 16
+    },
+    {
+      "week": 3,
+      "date": "Apr 18",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 2,
+      "teamBNumber": 13
+    },
+    {
+      "week": 3,
+      "date": "Apr 18",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 3,
+      "teamBNumber": 12
+    },
+    {
+      "week": 3,
+      "date": "Apr 18",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 4,
+      "teamBNumber": 11
+    },
+    {
+      "week": 3,
+      "date": "Apr 18",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 5,
+      "teamBNumber": 10
+    },
+    {
+      "week": 3,
+      "date": "Apr 18",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 6,
+      "teamBNumber": 9
+    },
+    {
+      "week": 3,
+      "date": "Apr 18",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 7,
+      "teamBNumber": 8
+    },
+    {
+      "week": 3,
+      "date": "Apr 18",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 17,
+      "teamBNumber": 15
+    },
+    {
+      "week": 3,
+      "date": "Apr 18",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 18,
+      "teamBNumber": 14
+    },
+    {
+      "week": 4,
+      "date": "Apr 25",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 15
+    },
+    {
+      "week": 4,
+      "date": "Apr 25",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 2,
+      "teamBNumber": 11
+    },
+    {
+      "week": 4,
+      "date": "Apr 25",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 3,
+      "teamBNumber": 10
+    },
+    {
+      "week": 4,
+      "date": "Apr 25",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 4,
+      "teamBNumber": 9
+    },
+    {
+      "week": 4,
+      "date": "Apr 25",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 5,
+      "teamBNumber": 8
+    },
+    {
+      "week": 4,
+      "date": "Apr 25",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 6,
+      "teamBNumber": 7
+    },
+    {
+      "week": 4,
+      "date": "Apr 25",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 16,
+      "teamBNumber": 14
+    },
+    {
+      "week": 4,
+      "date": "Apr 25",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 17,
+      "teamBNumber": 13
+    },
+    {
+      "week": 4,
+      "date": "Apr 25",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 18,
+      "teamBNumber": 12
+    },
+    {
+      "week": 5,
+      "date": "May 2",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 14
+    },
+    {
+      "week": 5,
+      "date": "May 2",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 2,
+      "teamBNumber": 9
+    },
+    {
+      "week": 5,
+      "date": "May 2",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 3,
+      "teamBNumber": 8
+    },
+    {
+      "week": 5,
+      "date": "May 2",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 4,
+      "teamBNumber": 7
+    },
+    {
+      "week": 5,
+      "date": "May 2",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 5,
+      "teamBNumber": 6
+    },
+    {
+      "week": 5,
+      "date": "May 2",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 15,
+      "teamBNumber": 13
+    },
+    {
+      "week": 5,
+      "date": "May 2",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 16,
+      "teamBNumber": 12
+    },
+    {
+      "week": 5,
+      "date": "May 2",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 17,
+      "teamBNumber": 11
+    },
+    {
+      "week": 5,
+      "date": "May 2",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 18,
+      "teamBNumber": 10
+    },
+    {
+      "week": 6,
+      "date": "May 9",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 13
+    },
+    {
+      "week": 6,
+      "date": "May 9",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 2,
+      "teamBNumber": 7
+    },
+    {
+      "week": 6,
+      "date": "May 9",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 3,
+      "teamBNumber": 6
+    },
+    {
+      "week": 6,
+      "date": "May 9",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 4,
+      "teamBNumber": 5
+    },
+    {
+      "week": 6,
+      "date": "May 9",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 14,
+      "teamBNumber": 12
+    },
+    {
+      "week": 6,
+      "date": "May 9",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 15,
+      "teamBNumber": 11
+    },
+    {
+      "week": 6,
+      "date": "May 9",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 16,
+      "teamBNumber": 10
+    },
+    {
+      "week": 6,
+      "date": "May 9",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 17,
+      "teamBNumber": 9
+    },
+    {
+      "week": 6,
+      "date": "May 9",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 18,
+      "teamBNumber": 8
+    },
+    {
+      "week": 7,
+      "date": "May 16",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 12
+    },
+    {
+      "week": 7,
+      "date": "May 16",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 2,
+      "teamBNumber": 5
+    },
+    {
+      "week": 7,
+      "date": "May 16",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 3,
+      "teamBNumber": 4
+    },
+    {
+      "week": 7,
+      "date": "May 16",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 13,
+      "teamBNumber": 11
+    },
+    {
+      "week": 7,
+      "date": "May 16",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 14,
+      "teamBNumber": 10
+    },
+    {
+      "week": 7,
+      "date": "May 16",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 15,
+      "teamBNumber": 9
+    },
+    {
+      "week": 7,
+      "date": "May 16",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 16,
+      "teamBNumber": 8
+    },
+    {
+      "week": 7,
+      "date": "May 16",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 17,
+      "teamBNumber": 7
+    },
+    {
+      "week": 7,
+      "date": "May 16",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 18,
+      "teamBNumber": 6
+    },
+    {
+      "week": 8,
+      "date": "May 23",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 11
+    },
+    {
+      "week": 8,
+      "date": "May 23",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 2,
+      "teamBNumber": 3
+    },
+    {
+      "week": 8,
+      "date": "May 23",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 12,
+      "teamBNumber": 10
+    },
+    {
+      "week": 8,
+      "date": "May 23",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 13,
+      "teamBNumber": 9
+    },
+    {
+      "week": 8,
+      "date": "May 23",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 14,
+      "teamBNumber": 8
+    },
+    {
+      "week": 8,
+      "date": "May 23",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 15,
+      "teamBNumber": 7
+    },
+    {
+      "week": 8,
+      "date": "May 23",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 16,
+      "teamBNumber": 6
+    },
+    {
+      "week": 8,
+      "date": "May 23",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 17,
+      "teamBNumber": 5
+    },
+    {
+      "week": 8,
+      "date": "May 23",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 18,
+      "teamBNumber": 4
+    },
+    {
+      "week": 9,
+      "date": "May 30",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 10
+    },
+    {
+      "week": 9,
+      "date": "May 30",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 11,
+      "teamBNumber": 9
+    },
+    {
+      "week": 9,
+      "date": "May 30",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 12,
+      "teamBNumber": 8
+    },
+    {
+      "week": 9,
+      "date": "May 30",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 13,
+      "teamBNumber": 7
+    },
+    {
+      "week": 9,
+      "date": "May 30",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 14,
+      "teamBNumber": 6
+    },
+    {
+      "week": 9,
+      "date": "May 30",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 15,
+      "teamBNumber": 5
+    },
+    {
+      "week": 9,
+      "date": "May 30",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 16,
+      "teamBNumber": 4
+    },
+    {
+      "week": 9,
+      "date": "May 30",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 17,
+      "teamBNumber": 3
+    },
+    {
+      "week": 9,
+      "date": "May 30",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 18,
+      "teamBNumber": 2
+    },
+    {
+      "week": 10,
+      "date": "Jun 6",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 9
+    },
+    {
+      "week": 10,
+      "date": "Jun 6",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 10,
+      "teamBNumber": 8
+    },
+    {
+      "week": 10,
+      "date": "Jun 6",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 11,
+      "teamBNumber": 7
+    },
+    {
+      "week": 10,
+      "date": "Jun 6",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 12,
+      "teamBNumber": 6
+    },
+    {
+      "week": 10,
+      "date": "Jun 6",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 13,
+      "teamBNumber": 5
+    },
+    {
+      "week": 10,
+      "date": "Jun 6",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 14,
+      "teamBNumber": 4
+    },
+    {
+      "week": 10,
+      "date": "Jun 6",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 15,
+      "teamBNumber": 3
+    },
+    {
+      "week": 10,
+      "date": "Jun 6",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 16,
+      "teamBNumber": 2
+    },
+    {
+      "week": 10,
+      "date": "Jun 6",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 17,
+      "teamBNumber": 18
+    },
+    {
+      "week": 11,
+      "date": "Jun 13",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 8
+    },
+    {
+      "week": 11,
+      "date": "Jun 13",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 9,
+      "teamBNumber": 7
+    },
+    {
+      "week": 11,
+      "date": "Jun 13",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 10,
+      "teamBNumber": 6
+    },
+    {
+      "week": 11,
+      "date": "Jun 13",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 11,
+      "teamBNumber": 5
+    },
+    {
+      "week": 11,
+      "date": "Jun 13",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 12,
+      "teamBNumber": 4
+    },
+    {
+      "week": 11,
+      "date": "Jun 13",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 13,
+      "teamBNumber": 3
+    },
+    {
+      "week": 11,
+      "date": "Jun 13",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 14,
+      "teamBNumber": 2
+    },
+    {
+      "week": 11,
+      "date": "Jun 13",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 15,
+      "teamBNumber": 18
+    },
+    {
+      "week": 11,
+      "date": "Jun 13",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 16,
+      "teamBNumber": 17
+    },
+    {
+      "week": 12,
+      "date": "Jun 20",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 7
+    },
+    {
+      "week": 12,
+      "date": "Jun 20",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 8,
+      "teamBNumber": 6
+    },
+    {
+      "week": 12,
+      "date": "Jun 20",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 9,
+      "teamBNumber": 5
+    },
+    {
+      "week": 12,
+      "date": "Jun 20",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 10,
+      "teamBNumber": 4
+    },
+    {
+      "week": 12,
+      "date": "Jun 20",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 11,
+      "teamBNumber": 3
+    },
+    {
+      "week": 12,
+      "date": "Jun 20",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 12,
+      "teamBNumber": 2
+    },
+    {
+      "week": 12,
+      "date": "Jun 20",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 13,
+      "teamBNumber": 18
+    },
+    {
+      "week": 12,
+      "date": "Jun 20",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 14,
+      "teamBNumber": 17
+    },
+    {
+      "week": 12,
+      "date": "Jun 20",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 15,
+      "teamBNumber": 16
+    },
+    {
+      "week": 13,
+      "date": "Jun 27",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 6
+    },
+    {
+      "week": 13,
+      "date": "Jun 27",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 7,
+      "teamBNumber": 5
+    },
+    {
+      "week": 13,
+      "date": "Jun 27",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 8,
+      "teamBNumber": 4
+    },
+    {
+      "week": 13,
+      "date": "Jun 27",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 9,
+      "teamBNumber": 3
+    },
+    {
+      "week": 13,
+      "date": "Jun 27",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 10,
+      "teamBNumber": 2
+    },
+    {
+      "week": 13,
+      "date": "Jun 27",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 11,
+      "teamBNumber": 18
+    },
+    {
+      "week": 13,
+      "date": "Jun 27",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 12,
+      "teamBNumber": 17
+    },
+    {
+      "week": 13,
+      "date": "Jun 27",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 13,
+      "teamBNumber": 16
+    },
+    {
+      "week": 13,
+      "date": "Jun 27",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 14,
+      "teamBNumber": 15
+    },
+    {
+      "week": 14,
+      "date": "Jul 4",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 5
+    },
+    {
+      "week": 14,
+      "date": "Jul 4",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 6,
+      "teamBNumber": 4
+    },
+    {
+      "week": 14,
+      "date": "Jul 4",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 7,
+      "teamBNumber": 3
+    },
+    {
+      "week": 14,
+      "date": "Jul 4",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 8,
+      "teamBNumber": 2
+    },
+    {
+      "week": 14,
+      "date": "Jul 4",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 9,
+      "teamBNumber": 18
+    },
+    {
+      "week": 14,
+      "date": "Jul 4",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 10,
+      "teamBNumber": 17
+    },
+    {
+      "week": 14,
+      "date": "Jul 4",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 11,
+      "teamBNumber": 16
+    },
+    {
+      "week": 14,
+      "date": "Jul 4",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 12,
+      "teamBNumber": 15
+    },
+    {
+      "week": 14,
+      "date": "Jul 4",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 13,
+      "teamBNumber": 14
+    },
+    {
+      "week": 15,
+      "date": "Jul 11",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 4
+    },
+    {
+      "week": 15,
+      "date": "Jul 11",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 5,
+      "teamBNumber": 3
+    },
+    {
+      "week": 15,
+      "date": "Jul 11",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 6,
+      "teamBNumber": 2
+    },
+    {
+      "week": 15,
+      "date": "Jul 11",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 7,
+      "teamBNumber": 18
+    },
+    {
+      "week": 15,
+      "date": "Jul 11",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 8,
+      "teamBNumber": 17
+    },
+    {
+      "week": 15,
+      "date": "Jul 11",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 9,
+      "teamBNumber": 16
+    },
+    {
+      "week": 15,
+      "date": "Jul 11",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 10,
+      "teamBNumber": 15
+    },
+    {
+      "week": 15,
+      "date": "Jul 11",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 11,
+      "teamBNumber": 14
+    },
+    {
+      "week": 15,
+      "date": "Jul 11",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 12,
+      "teamBNumber": 13
+    },
+    {
+      "week": 16,
+      "date": "Jul 18",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 3
+    },
+    {
+      "week": 16,
+      "date": "Jul 18",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 4,
+      "teamBNumber": 2
+    },
+    {
+      "week": 16,
+      "date": "Jul 18",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 5,
+      "teamBNumber": 18
+    },
+    {
+      "week": 16,
+      "date": "Jul 18",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 6,
+      "teamBNumber": 17
+    },
+    {
+      "week": 16,
+      "date": "Jul 18",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 7,
+      "teamBNumber": 16
+    },
+    {
+      "week": 16,
+      "date": "Jul 18",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 8,
+      "teamBNumber": 15
+    },
+    {
+      "week": 16,
+      "date": "Jul 18",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 9,
+      "teamBNumber": 14
+    },
+    {
+      "week": 16,
+      "date": "Jul 18",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 10,
+      "teamBNumber": 13
+    },
+    {
+      "week": 16,
+      "date": "Jul 18",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 11,
+      "teamBNumber": 12
+    },
+    {
+      "week": 17,
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 1,
+      "teamBNumber": 2
+    },
+    {
+      "week": 17,
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 3,
+      "teamBNumber": 18
+    },
+    {
+      "week": 17,
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 4,
+      "teamBNumber": 17
+    },
+    {
+      "week": 17,
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 5,
+      "teamBNumber": 16
+    },
+    {
+      "week": 17,
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 6,
+      "teamBNumber": 15
+    },
+    {
+      "week": 17,
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "course": "C-Way",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 7,
+      "teamBNumber": 14
+    },
+    {
+      "week": 17,
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 8,
+      "teamBNumber": 13
+    },
+    {
+      "week": 17,
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 9,
+      "teamBNumber": 12
+    },
+    {
+      "week": 17,
+      "date": "Jul 25",
+      "time": "5:30 PM",
+      "course": "Clayton Country Club",
+      "format": "9-Hole Stroke + Match Play",
+      "teamANumber": 10,
+      "teamBNumber": 11
+    }
+  ],
+  "rounds": [
+    {
+      "id": 1,
+      "week": 1,
+      "playerId": 1,
+      "holes": [
+        5,
+        4,
+        4,
+        5,
+        4,
+        3,
+        5,
+        4,
+        4
+      ],
+      "gross": 38
+    },
+    {
+      "id": 2,
+      "week": 1,
+      "playerId": 5,
+      "holes": [
+        5,
+        5,
+        4,
+        6,
+        4,
+        4,
+        5,
+        4,
+        5
+      ],
+      "gross": 42
+    },
+    {
+      "id": 3,
+      "week": 1,
+      "playerId": 2,
+      "holes": [
+        4,
+        4,
+        5,
+        5,
+        5,
+        3,
+        4,
+        4,
+        4
+      ],
+      "gross": 38
+    },
+    {
+      "id": 4,
+      "week": 1,
+      "playerId": 6,
+      "holes": [
+        5,
+        4,
+        5,
+        5,
+        5,
+        4,
+        5,
+        4,
+        4
+      ],
+      "gross": 41
+    },
+    {
+      "id": 5,
+      "week": 1,
+      "playerId": 3,
+      "holes": [
+        5,
+        5,
+        4,
+        5,
+        5,
+        4,
+        5,
+        5,
+        4
+      ],
+      "gross": 42
+    },
+    {
+      "id": 6,
+      "week": 1,
+      "playerId": 7,
+      "holes": [
+        5,
+        4,
+        4,
+        5,
+        5,
+        4,
+        6,
+        4,
+        4
+      ],
+      "gross": 41
+    },
+    {
+      "id": 7,
+      "week": 1,
+      "playerId": 4,
+      "holes": [
+        4,
+        5,
+        5,
+        5,
+        4,
+        4,
+        5,
+        4,
+        5
+      ],
+      "gross": 41
+    },
+    {
+      "id": 8,
+      "week": 1,
+      "playerId": 8,
+      "holes": [
+        4,
+        5,
+        4,
+        5,
+        5,
+        4,
+        5,
+        5,
+        5
+      ],
+      "gross": 42
+    },
+    {
+      "id": 9,
+      "week": 2,
+      "playerId": 1,
+      "holes": [
+        4,
+        4,
+        4,
+        5,
+        4,
+        4,
+        5,
+        4,
+        4
+      ],
+      "gross": 38
+    },
+    {
+      "id": 10,
+      "week": 2,
+      "playerId": 5,
+      "holes": [
+        5,
+        4,
+        4,
+        5,
+        5,
+        4,
+        5,
+        4,
+        5
+      ],
+      "gross": 41
+    },
+    {
+      "id": 11,
+      "week": 2,
+      "playerId": 2,
+      "holes": [
+        4,
+        5,
+        4,
+        5,
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "gross": 39
+    },
+    {
+      "id": 12,
+      "week": 2,
+      "playerId": 6,
+      "holes": [
+        5,
+        5,
+        4,
+        5,
+        5,
+        4,
+        5,
+        4,
+        4
+      ],
+      "gross": 41
+    },
+    {
+      "id": 13,
+      "week": 2,
+      "playerId": 3,
+      "holes": [
+        5,
+        5,
+        5,
+        5,
+        4,
+        4,
+        5,
+        5,
+        4
+      ],
+      "gross": 42
+    },
+    {
+      "id": 14,
+      "week": 2,
+      "playerId": 7,
+      "holes": [
+        5,
+        4,
+        5,
+        5,
+        5,
+        4,
+        5,
+        4,
+        4
+      ],
+      "gross": 41
+    },
+    {
+      "id": 15,
+      "week": 2,
+      "playerId": 4,
+      "holes": [
+        4,
+        4,
+        5,
+        5,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "gross": 38
+    },
+    {
+      "id": 16,
+      "week": 2,
+      "playerId": 8,
+      "holes": [
+        5,
+        4,
+        5,
+        5,
+        5,
+        4,
+        5,
+        4,
+        5
+      ],
+      "gross": 42
+    }
+  ],
+  "announcements": [],
+  "directoryEntries": [],
+  "substitutes": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": []
+  },
+  "bylawsDocumentName": "league-bylaws.pdf",
+  "bylawsDocumentUrl": "/league-bylaws.pdf",
+  "favoriteTeamNumber": "6"
+}
