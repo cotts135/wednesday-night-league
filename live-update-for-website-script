@@ -1,0 +1,14 @@
+Your live-site update process from now on
+
+Before editing, make your backup copy:
+
+cp ~/golf-league-site/src/App.jsx ~/golf-league-site/src/App-working-backup.jsx
+
+Then after you make changes, run:
+
+cd ~/golf-league-site
+git add .
+git commit -m "Describe the change"
+git push
+
+Because GitHub is connected to Vercel, every push to main will trigger a fresh deployment automatically.
