@@ -2,9 +2,9 @@ import React from "react";
 import { createClient } from "@supabase/supabase-js";
 
 const STORAGE_KEY = "golf-league-site-data-v5";
-const ADMIN_PASSWORD = "golfadmin123";
-const SCORE_ENTRY_PASSWORD = "scoreentry123";
-const ANNOUNCEMENT_PASSWORD = "announce123";
+const ADMIN_PASSWORD = "IDY9#av%$le";
+const SCORE_ENTRY_PASSWORD = "XN7sN0*wn2f";
+const ANNOUNCEMENT_PASSWORD = "sFpcRymb@3d";
 const COURSE_HOLE_PARS = {
   "C-Way": [5, 4, 4, 4, 3, 5, 4, 4, 3],
   "Clayton Country Club": [4, 4, 4, 3, 3, 4, 5, 3, 4],
@@ -1910,9 +1910,9 @@ export default function GolfLeagueStarterWebsite() {
       <main>
         {leagueAlert ? (
           <div className="border-b border-amber-400/30 bg-amber-500/15">
-            <div className="mx-auto max-w-7xl px-4 py-3 text-center text-sm font-semibold text-amber-100 sm:px-6 lg:px-8">
-              ⚠️ {leagueAlert}
-            </div>
+            <div className="mx-auto max-w-7xl px-4 py-3 text-center text-sm font-semibold text-amber-900 sm:px-6 lg:px-8">
+  ⚠️ {leagueAlert}
+</div>
           </div>
         ) : null}
         {activeTab === "standings" ? (
