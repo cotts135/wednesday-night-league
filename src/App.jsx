@@ -329,6 +329,8 @@ export default function GolfLeagueStarterWebsite() {
   const [selectedPlayerProfileId, setSelectedPlayerProfileId] = React.useState(null);
   const [weatherState, setWeatherState] = React.useState({ loading: true, data: null, error: "" });
   const [sharedDataLoaded, setSharedDataLoaded] = React.useState(false);
+  const leagueDataRef = React.useRef(null);
+  const isSavingSharedDataRef = React.useRef(false);
 
   const [formData, setFormData] = React.useState({
     playerId: String(initialData.players[0]?.id ?? 1),
@@ -468,23 +470,73 @@ export default function GolfLeagueStarterWebsite() {
       bylawsDocumentUrl,
     };
 
+    leagueDataRef.current = payload;
+
     if (typeof window !== "undefined") {
       window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
     }
 
     const saveSharedLeagueData = async () => {
       if (!supabase) return;
+      isSavingSharedDataRef.current = true;
       await supabase.from("league_state").upsert({
         id: "current",
         season_year: 2026,
         data: payload,
         updated_at: new Date().toISOString(),
       });
+      setTimeout(() => {
+        isSavingSharedDataRef.current = false;
+      }, 500);
     };
 
     saveSharedLeagueData();
     setLastUpdated(new Date().toLocaleString());
   }, [sharedDataLoaded, teams, players, schedule, rounds, announcements, leagueAlert, directoryEntries, substitutes, manualPointAdjustments, lockedWeeks, bylawsDocumentName, bylawsDocumentUrl]);
+
+  React.useEffect(() => {
+    if (!supabase || !sharedDataLoaded) return;
+
+    const applySharedLeagueData = (saved) => {
+      if (saved.teams) setTeams(saved.teams);
+      if (saved.players) setPlayers(saved.players);
+      if (saved.schedule) setSchedule(saved.schedule);
+      if (saved.rounds) setRounds(saved.rounds);
+      if (saved.announcements) setAnnouncements(saved.announcements);
+      if (typeof saved.leagueAlert === "string") {
+        setLeagueAlert(saved.leagueAlert);
+        setLeagueAlertInput(saved.leagueAlert);
+      }
+      if (saved.directoryEntries) setDirectoryEntries(saved.directoryEntries);
+      if (saved.substitutes) setSubstitutes(saved.substitutes);
+      if (saved.manualPointAdjustments) setManualPointAdjustments(saved.manualPointAdjustments);
+      if (saved.lockedWeeks) setLockedWeeks(saved.lockedWeeks);
+      if (saved.bylawsDocumentName) setBylawsDocumentName(saved.bylawsDocumentName);
+      if (saved.bylawsDocumentUrl) setBylawsDocumentUrl(saved.bylawsDocumentUrl);
+    };
+
+    const loadLatestSharedLeagueData = async () => {
+      if (isSavingSharedDataRef.current) return;
+      const { data, error } = await supabase
+        .from("league_state")
+        .select("data")
+        .eq("id", "current")
+        .single();
+
+      if (error || !data?.data || Object.keys(data.data).length === 0) return;
+
+      const incoming = JSON.stringify(data.data);
+      const current = JSON.stringify(leagueDataRef.current ?? {});
+      if (incoming === current) return;
+
+      leagueDataRef.current = data.data;
+      applySharedLeagueData(data.data);
+      setLastUpdated(new Date().toLocaleString());
+    };
+
+    const intervalId = window.setInterval(loadLatestSharedLeagueData, 10000);
+    return () => window.clearInterval(intervalId);
+  }, [sharedDataLoaded]);
 
   const teamMap = React.useMemo(() => {
     return Object.fromEntries(teams.map((team) => [Number(team.number), team]));

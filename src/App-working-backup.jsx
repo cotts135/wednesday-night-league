@@ -2,9 +2,9 @@ import React from "react";
 import { createClient } from "@supabase/supabase-js";
 
 const STORAGE_KEY = "golf-league-site-data-v5";
-const ADMIN_PASSWORD = "IDY9#av%$le";
-const SCORE_ENTRY_PASSWORD = "XN7sN0*wn2f";
-const ANNOUNCEMENT_PASSWORD = "sFpcRymb@3d";
+const ADMIN_PASSWORD = "golfadmin123";
+const SCORE_ENTRY_PASSWORD = "scoreentry123";
+const ANNOUNCEMENT_PASSWORD = "announce123";
 const COURSE_HOLE_PARS = {
   "C-Way": [5, 4, 4, 4, 3, 5, 4, 4, 3],
   "Clayton Country Club": [4, 4, 4, 3, 3, 4, 5, 3, 4],
@@ -1854,28 +1854,25 @@ export default function GolfLeagueStarterWebsite() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-emerald-50 via-stone-50 to-white text-stone-900">
-      <header className="sticky top-0 z-30 border-b border-emerald-100 bg-white/90 shadow-sm backdrop-blur">
+      <header className="border-b border-emerald-100 bg-white/95 shadow-sm backdrop-blur lg:sticky lg:top-0 lg:z-30">
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
-            <div className="flex items-start gap-4">
-              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-4 border-emerald-700 bg-emerald-50 text-center text-xs font-bold text-emerald-800 shadow-sm">
-                {leagueLogoMode === "icon" ? <span>WNL<br />Golf</span> : <span className="text-2xl">⛳</span>}
-              </div>
+            <div className="flex items-start justify-center gap-4 text-center lg:justify-start lg:text-left">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-emerald-700">Golf League</p>
-                <h1 className="mt-1 text-2xl font-bold tracking-tight sm:text-3xl">Wednesday Night League</h1>
-                <div className="mt-3 flex flex-col items-center">
-                  <p className="text-center text-xl font-semibold tracking-wide text-emerald-200">
+                <h1 className="mt-1 text-xl font-bold tracking-tight sm:text-3xl">Wednesday Night League</h1>
+                <div className="mt-2 flex flex-col items-center lg:items-start">
+                  <p className="text-center text-sm font-semibold tracking-wide text-emerald-700 sm:text-xl lg:text-left">
                     League standings, schedule, results, score entry, and bylaws in one place.
                   </p>
-                  <p className="mt-2 text-sm text-stone-500 text-center">
+                  <p className="mt-1 text-xs text-stone-500 text-center sm:text-sm lg:text-left">
                     Last updated: {lastUpdated}
                   </p>
-                  <div className="mt-4 w-96 border-t border-dashed border-emerald-400/40"></div>
+                  <div className="mt-3 w-56 border-t border-dashed border-emerald-400/40 sm:w-96"></div>
                 </div>
               </div>
             </div>
-            <div className="mt-8 grid grid-cols-2 gap-2 sm:grid-cols-3 xl:grid-cols-6">
+            <div className="mt-3 flex gap-2 overflow-x-auto pb-2 lg:mt-8 lg:grid lg:grid-cols-6 lg:overflow-visible lg:pb-0 xl:grid-cols-6">
               {[
                 ["standings", "Standings"],
                 ["schedule", "Schedule"],
@@ -1893,7 +1890,7 @@ export default function GolfLeagueStarterWebsite() {
                   type="button"
                   onClick={() => setActiveTab(key)}
                   className={
-                    "rounded-2xl px-4 py-2.5 text-sm font-semibold transition-all " +
+                    "shrink-0 rounded-2xl px-4 py-2.5 text-sm font-semibold transition-all " +
                     (activeTab === key
                       ? "bg-emerald-700 text-white shadow-sm"
                       : "border border-white/10 bg-white text-stone-700 hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-50")
@@ -1910,9 +1907,9 @@ export default function GolfLeagueStarterWebsite() {
       <main>
         {leagueAlert ? (
           <div className="border-b border-amber-400/30 bg-amber-500/15">
-            <div className="mx-auto max-w-7xl px-4 py-3 text-center text-sm font-semibold text-amber-900 sm:px-6 lg:px-8">
-  ⚠️ {leagueAlert}
-</div>
+            <div className="mx-auto max-w-7xl px-4 py-3 text-center text-sm font-semibold text-amber-100 sm:px-6 lg:px-8">
+              ⚠️ {leagueAlert}
+            </div>
           </div>
         ) : null}
         {activeTab === "standings" ? (
@@ -2063,7 +2060,7 @@ export default function GolfLeagueStarterWebsite() {
                       <div className="rounded-2xl border border-dashed border-stone-300 bg-stone-50 p-4 text-sm text-stone-500">
                         No upcoming matchups loaded.
                       </div>
-                    ) : nextWeekSchedule.items.slice(0, 6).map((item, index) => (
+                    ) : nextWeekSchedule.items.map((item, index) => (
                       <div key={`${item.week}-${item.teamANumber}-${item.teamBNumber}-${index}`} className="rounded-2xl bg-stone-50 p-4 shadow-sm">
                         <div className="flex items-center justify-between gap-3">
                           <div className="font-semibold text-stone-900">{`Team ${item.teamANumber} vs Team ${item.teamBNumber}`}</div>
