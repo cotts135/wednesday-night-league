@@ -1959,9 +1959,9 @@ export default function GolfLeagueStarterWebsite() {
       <main>
         {leagueAlert ? (
           <div className="border-b border-amber-400/30 bg-amber-500/15">
-            <div className="mx-auto max-w-7xl px-4 py-3 text-center text-sm font-semibold text-amber-100 sm:px-6 lg:px-8">
-              ⚠️ {leagueAlert}
-            </div>
+            <div className="mx-auto max-w-7xl px-4 py-3 text-center text-sm font-semibold text-amber-900 sm:px-6 lg:px-8">
+  ⚠️ {leagueAlert}
+</div>
           </div>
         ) : null}
         {activeTab === "standings" ? (
