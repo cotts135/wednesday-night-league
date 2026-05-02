@@ -2060,7 +2060,7 @@ export default function GolfLeagueStarterWebsite() {
                       <div className="rounded-2xl border border-dashed border-stone-300 bg-stone-50 p-4 text-sm text-stone-500">
                         No upcoming matchups loaded.
                       </div>
-                    ) : nextWeekSchedule.items.slice(0, 6).map((item, index) => (
+                    ) : nextWeekSchedule.items.map((item, index) => (
                       <div key={`${item.week}-${item.teamANumber}-${item.teamBNumber}-${index}`} className="rounded-2xl bg-stone-50 p-4 shadow-sm">
                         <div className="flex items-center justify-between gap-3">
                           <div className="font-semibold text-stone-900">{`Team ${item.teamANumber} vs Team ${item.teamBNumber}`}</div>
