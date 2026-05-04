@@ -303,8 +303,10 @@ export default function GolfLeagueStarterWebsite() {
   const [scoreEntryPasswordInput, setScoreEntryPasswordInput] = React.useState("");
   const [scoreEntryMessage, setScoreEntryMessage] = React.useState("");
   const [adminAuthenticated, setAdminAuthenticated] = React.useState(false);
+  const [adminUserEmail, setAdminUserEmail] = React.useState("");
   const [announcementAuthenticated, setAnnouncementAuthenticated] = React.useState(false);
   const [announcementPasswordInput, setAnnouncementPasswordInput] = React.useState("");
+  const [adminEmailInput, setAdminEmailInput] = React.useState("");
   const [adminPasswordInput, setAdminPasswordInput] = React.useState("");
   const [adminMessage, setAdminMessage] = React.useState("");
   const [lastUpdated, setLastUpdated] = React.useState(() => new Date().toLocaleString());
@@ -357,6 +359,29 @@ export default function GolfLeagueStarterWebsite() {
     if (typeof window === "undefined") return;
     window.localStorage.setItem("favorite-team-number", favoriteTeamNumber);
   }, [favoriteTeamNumber]);
+
+  React.useEffect(() => {
+    if (!supabase) return;
+
+    supabase.auth.getSession().then(({ data }) => {
+      const email = data?.session?.user?.email ?? "";
+      if (email) {
+        setAdminAuthenticated(true);
+        setAdminUserEmail(email);
+      }
+    });
+
+    const { data: listener } = supabase.auth.onAuthStateChange((_event, session) => {
+      const email = session?.user?.email ?? "";
+      setAdminAuthenticated(Boolean(email));
+      setAdminUserEmail(email);
+      if (!email) setAdminOpen(false);
+    });
+
+    return () => {
+      listener?.subscription?.unsubscribe?.();
+    };
+  }, []);
 
   React.useEffect(() => {
     const firstFavoritePlayer = players.find((player) => Number(player.teamNumber) === Number(favoriteTeamNumber))?.id ?? null;
@@ -1847,10 +1872,33 @@ export default function GolfLeagueStarterWebsite() {
     );
   };
 
-  const handleAdminLogin = () => {
+  const handleAdminLogin = async () => {
+    if (supabase) {
+      const email = adminEmailInput.trim();
+      const password = adminPasswordInput;
+      if (!email || !password) {
+        setAdminMessage("Enter your admin email and password.");
+        return;
+      }
+
+      const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+      if (error || !data?.session) {
+        setAdminAuthenticated(false);
+        setAdminMessage("Admin login failed. Check the email and password.");
+        return;
+      }
+
+      setAdminAuthenticated(true);
+      setAdminUserEmail(data.session.user.email ?? email);
+      setAdminMessage("Admin access granted.");
+      setAdminEmailInput("");
+      setAdminPasswordInput("");
+      return;
+    }
+
     if (adminPasswordInput === ADMIN_PASSWORD) {
       setAdminAuthenticated(true);
-      setAdminMessage("Admin access granted.");
+      setAdminMessage("Admin access granted. Supabase is not connected locally, so this used the local fallback password.");
       setAdminPasswordInput("");
       return;
     }
@@ -1880,9 +1928,14 @@ export default function GolfLeagueStarterWebsite() {
     setAdminMessage(leagueAlertInput.trim() ? "League alert updated." : "League alert cleared.");
   };
 
-  const handleAdminLogout = () => {
+  const handleAdminLogout = async () => {
+    if (supabase) {
+      await supabase.auth.signOut();
+    }
     setAdminAuthenticated(false);
+    setAdminUserEmail("");
     setAdminOpen(false);
+    setAdminEmailInput("");
     setAdminPasswordInput("");
     setAdminMessage("Admin access removed.");
   };
@@ -1959,9 +2012,9 @@ export default function GolfLeagueStarterWebsite() {
       <main>
         {leagueAlert ? (
           <div className="border-b border-amber-400/30 bg-amber-500/15">
-            <div className="mx-auto max-w-7xl px-4 py-3 text-center text-sm font-semibold text-amber-900 sm:px-6 lg:px-8">
-  ⚠️ {leagueAlert}
-</div>
+            <div className="mx-auto max-w-7xl px-4 py-3 text-center text-sm font-semibold text-amber-100 sm:px-6 lg:px-8">
+              ⚠️ {leagueAlert}
+            </div>
           </div>
         ) : null}
         {activeTab === "standings" ? (
@@ -3144,6 +3197,8 @@ export default function GolfLeagueStarterWebsite() {
                     {adminOpen ? "Hide Admin" : "Show Admin"}
                   </button>
                   {adminAuthenticated ? (
+                    <div className="flex flex-col items-end gap-2">
+                      <span className="text-xs font-semibold text-stone-500">Signed in as {adminUserEmail || "admin"}</span>
                     <button
                       type="button"
                       onClick={handleAdminLogout}
@@ -3151,6 +3206,7 @@ export default function GolfLeagueStarterWebsite() {
                     >
                       Log Out
                     </button>
+                    </div>
                   ) : null}
                 </div>
               </div>
@@ -3158,13 +3214,23 @@ export default function GolfLeagueStarterWebsite() {
               {!adminAuthenticated ? (
                 <div className="mt-6 max-w-md rounded-3xl border border-white/10 bg-stone-50 p-5">
                   <label className="text-sm font-medium text-stone-700">
+                    Admin email
+                    <input
+                      type="email"
+                      value={adminEmailInput}
+                      onChange={(event) => setAdminEmailInput(event.target.value)}
+                      className="mt-2 w-full rounded-2xl border border-white/15 px-4 py-3"
+                      placeholder="president@example.com"
+                    />
+                  </label>
+                  <label className="mt-3 block text-sm font-medium text-stone-700">
                     Admin password
                     <input
                       type="password"
                       value={adminPasswordInput}
                       onChange={(event) => setAdminPasswordInput(event.target.value)}
                       className="mt-2 w-full rounded-2xl border border-white/15 px-4 py-3"
-                      placeholder="Enter admin password"
+                      placeholder="Enter your password"
                     />
                   </label>
                   <button
@@ -3172,7 +3238,7 @@ export default function GolfLeagueStarterWebsite() {
                     onClick={handleAdminLogin}
                     className="mt-3 w-full rounded-2xl bg-emerald-700 px-4 py-3 text-sm font-semibold text-white"
                   >
-                    Unlock Admin Panel
+                    Sign In to Admin Panel
                   </button>
                 </div>
               ) : null}

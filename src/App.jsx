@@ -2278,9 +2278,7 @@ export default function GolfLeagueStarterWebsite() {
                     >
                       Unlock Score Entry
                     </button>
-                    <p className="mt-3 text-xs text-stone-500">
-                      Current demo password: <span className="font-semibold">scoreentry123</span>
-                    </p>
+                    
                   </div>
                 ) : null}
 
